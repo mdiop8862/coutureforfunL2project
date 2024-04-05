@@ -1,0 +1,30 @@
+.cours_main {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+body{
+    background-color:  #F3E5AB;
+
+}
+.niveau1 , .niveau2 , .niveau3{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    background-color: #FFC300;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif ;
+    margin: 20px;
+
+}
+.niveau2{
+    padding: 5px;
+}
+.niveauTitle{
+    font-family: "Pacifico-Regular.ttf" , sans-serif;
+    color: #54DFFE;
+}

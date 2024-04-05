@@ -1,0 +1,119 @@
+*{
+    margin : 0 ; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "Pacifico-Regular.ttf";
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: "PlayfairDisplay-VariableFont_wght.ttf";
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body{
+    background-color:  #F3E5AB;
+
+}
+
+.container-screen1 {
+    position: fixed;
+    width: 100%;
+
+}
+ul li a , .btn-contain a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;
+    margin: 12px;
+}
+.logo {
+    font-family: "Pacifico-Regular.ttf" , sans-serif;
+    align-self: center;
+    
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 9px;
+}
+
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: white;
+}
+.btn-contain {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:"Playfai-+*rDisplay-VariableFont_wght.ttf" , sans-serif ;
+}
+._btn {
+    background-color: #54DFFE;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 3px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;
+
+}
+.Temoignages{
+    padding: 10px;
+    margin-top: 50px;
+}
+.temChild {
+    
+    width: 20%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #54DFFE;
+    font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;
+
+}
+
+
+.tem_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Temoignages > p {
+    text-align: center;
+    margin: 0;
+    color: #FFC300;
+    font-weight: bold;
+    font-family: "Pacifico-Regular.ttf" , sans-serif;
+ }
+/*.Temoignages > p {
+   text-align: center;
+   margin: 0;
+}
+
+.temChild {
+    width: 20%;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+*/
