@@ -17,7 +17,7 @@
   
 }
 catch(PDOException $e){
-  echo"connexion non etabli" ;
+  echo "connexion non etabli" ;
 }
 
 ?>
@@ -51,18 +51,49 @@ catch(PDOException $e){
                   <p class="niveauTitle fs-2"><?php echo $rows["titre"] ?></p>
                   <p class="niveauDesc"><?php echo $rows["description"] ?></p>
 
-                         <?php
-                                if($isloged == true){ ?>
-                                    <form action="get" method="../php/coursInscription.php?inscription=on">
-                                     <div class="btn-contain" >
+                        <?php
+                                if($isloged == true ){ 
+                                  try {
+                                    $stmt = $pdo->prepare("SELECT * FROM inscription WHERE email = :email AND titre = :titre");
+                                    $stmt->bindParam(":email", $_SESSION["email"]);
+                                    $stmt->bindParam(":titre", $rows["titre"]);
+                                    $stmt->execute();
+                                    $inscription_result = $stmt->fetch(PDO::FETCH_ASSOC);
+                                 } catch(PDOException $e) {
+                                    // Gestion des erreurs
+                                 }
+                                 if($inscription_result){?>
+                                   
+                                  <a style="text-decoration : none ; color : inherit" href="../php/desinscriptionCours.php?titre=<?php echo $rows['titre']; ?>">
+
+                                   <div class="btn-contain">
+                                          <p class="_btn" >Se desinscrire</p>
+                                   </div>
+
+                                   </a>
+
+                               <?php } ?>
+
+                               <?php if(! $inscription_result) {?>
+
+
+                                <a style="text-decoration : none ; color : inherit" href="../php/coursInscription.php?titre=<?php echo $rows['titre']; ?>">
+
+                                    <div class="btn-contain">
                                            <p class="_btn" >S'inscrire</p>
                                      </div>
-                                    </form>
+
+                                    </a>
+
+                                <?php }?>
+                                    
                         <?php } ?>
+
+
                  
                </div>
                <img src="<?php echo "../images/".$rows["image"] ?>" alt="" style="width : 100%">
-           </div>
+              </div>
             
         <?php } ?>
 
@@ -83,3 +114,7 @@ catch(PDOException $e){
       
 </body>
 </html>
+
+
+
+

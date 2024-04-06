@@ -44,6 +44,7 @@ body{
     border-radius: 10px;
     text-align: center;
     font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;
+    cursor: pointer;
 
 }
 .item {
@@ -64,4 +65,8 @@ input:focus , textarea:focus, select:focus {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+}
+
+form label{
+     font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;  
 }

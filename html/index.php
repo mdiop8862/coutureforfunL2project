@@ -30,7 +30,7 @@
           <p style="margin-top : 30px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deser
             unt velit nisi nemo iste sint ipsum blanditiis incidunt consectetur quas debitis optio officia illo nobis quod, quae culpa impedit earum assumenda!</p>
             <div class="btn-contactez">
-            <p class="_btn-content">Contactez-nous</p>
+            <p class="_btn-content" style="cursor : pointer ">Contactez-nous</p>
             </div>
        </div>
        <div class="section-right">
@@ -45,7 +45,7 @@
       <div class="tem_container">
       <div class="tem1 temChild">
            <div class="pres" style="display : flex ; justify-content : flex-start">
-               <img src="../images/avatar.jpg" alt="" style="width : 20% ; border-radius : 100%" >
+               <img src="../images/avatar3.jpg" alt="" style="width : 20% ; border-radius : 100%" >
                <p style="font-weight:bold ; align-self : center ; margin-left : 10px">Diop M.</p>
            </div>
            <div class="comment" style="margin-top : 10px ">
@@ -56,8 +56,8 @@
 
       <div class="tem1 temChild">
            <div class="pres" style="display : flex ; justify-content : flex-start">
-               <img src="../images/avatar.jpg" alt="" style="width : 20% ; border-radius : 100%" >
-               <p style="font-weight:bold ; align-self : center ; margin-left : 10px">Diop M.</p>
+               <img src="../images/avatar2.jpg" alt="" style="width : 20% ; border-radius : 100%" >
+               <p style="font-weight:bold ; align-self : center ; margin-left : 10px">Ndiaye Y.</p>
            </div>
            <div class="comment" style="margin-top : 10px ">
               <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eum exercitationem nulla molestiae?
@@ -68,7 +68,7 @@
       <div class="tem1 temChild">
            <div class="pres" style="display : flex ; justify-content : flex-start">
                <img src="../images/avatar.jpg" alt="" style="width : 20% ; border-radius : 100%" >
-               <p style="font-weight:bold ; align-self : center ; margin-left : 10px">Diop M.</p>
+               <p style="font-weight:bold ; align-self : center ; margin-left : 10px">Gamabari D.</p>
            </div>
            <div class="comment" style="margin-top : 10px ">
               <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eum exercitationem nulla molestiae?
@@ -78,7 +78,7 @@
 
   </div>
                   <div class="btn-contain" >
-                      <p class="_btn mt-3" >Voir plus</p>
+                      <p class="_btn mt-3" style="cursor : pointer " >Voir plus</p>
                    </div>     
     </div>
      

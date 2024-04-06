@@ -29,6 +29,7 @@
    margin-top: 30px;
    display: flex;
    justify-content: center;
+   cursor: pointer;
 }
 ._btn-content {
     background-color:#54DFFE ;
