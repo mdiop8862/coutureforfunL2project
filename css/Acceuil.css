@@ -42,11 +42,16 @@
 }
 
 footer {
-   
-    margin-top: 60px;
+   position: relative;
+   margin-top: 60px;
+   display: flex;
    background-color: #FFC300;
    text-align: center;
    padding: 20px;
+   justify-content: space-around;
    color: white;
    font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;
+}
+.active {
+    color : red !important ;
 }

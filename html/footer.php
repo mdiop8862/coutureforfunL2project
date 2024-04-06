@@ -9,10 +9,13 @@
 ">
     <title>Document</title>
 </head>
-<body>
+<body style="position : relative ; min-height : 100vh ">
+    
 
     <footer>
-            &copy 2024 designed by anonymous
+           <p> &copy 2024 designed by anonymous</p>
+           <p>Tel : +33 1 53 08 54 55 </p>
+           <p>Email : coutureForFun@gmail.com</p>
     </footer>
 
       

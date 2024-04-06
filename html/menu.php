@@ -26,7 +26,7 @@
               <nav class="navigation" >
                    <h4 class="logo"><span style="color : #FFC300">Couture</span><span style="color : #EBB300">For</span><span style=" color : #CC9C00 ">Fun</span></h4>
                    <ul >
-                      <li ><a href="./index.php">Acceuil</a></li>
+                      <li ><a href="./index.php" >Acceuil</a></li>
                       <li > <a href="./cours.php">Cours de couture</a></li>
                       <li> <a href="./devis.php">Devis personnalise</a></li>
                       <li> <a href="./contact.php">Contact</a></li>
@@ -58,6 +58,6 @@
 
       </div>
 
-      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

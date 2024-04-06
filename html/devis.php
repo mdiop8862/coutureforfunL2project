@@ -1,9 +1,6 @@
 <?php
-       session_start();
-
-
+    session_start() ;
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,13 +25,7 @@
         <img src="../images/form.svg" alt=""  style="width : 32%">
         <div class="form-container">
              <p class="fs-3">Devis sur mesure pour vous</p>
-             <?php
-                if(isset($_GET["message"])){ ?>
-                <div style="text-align : center ; color : green ">
-                     <?php echo $_GET["message"] ?>
-                </div>
-
-               <?php } ?>
+            
              <form action="../php/devisTraitement.php" method="post">
 
              <div class="d-flex mb-3 justify-content-between">
@@ -44,7 +35,7 @@
                        <label for="typeVet" class="form-label">Type de vetement </label>
                     </div>
                     
-                    <select name="vetement" id="typeVet" >
+                    <select name="vetement" id="typeVet"  >
                          <option value="pantalon">Pantalon</option>
                          <option value="chemise">Chemise</option>
                          <option value="jupe">Jupe</option>

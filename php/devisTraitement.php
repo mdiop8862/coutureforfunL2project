@@ -33,7 +33,7 @@
 
      mail($to, $subject, $message);
 
-    header("Location:../html/devis.php?message=email envoye avec success") ;
+     header("Location:../html/Recaptulatif.php?typevetement=$typeVetement&typeTissu=$typeTissu&taille=$taille&prestation=$prestation") ;
 
 
    

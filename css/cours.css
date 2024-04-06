@@ -5,10 +5,7 @@
     align-items: center;
     
 }
-body{
-    background-color:  #F3E5AB;
 
-}
 .niveau1 {
     display: flex;
     flex-direction: row;
