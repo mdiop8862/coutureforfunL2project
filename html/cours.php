@@ -92,7 +92,7 @@ catch(PDOException $e){
 
                  
                </div>
-               <img src="<?php echo "../images/".$rows["image"] ?>" alt="" style="width : 100%">
+               <img src="<?php echo "../images/".$rows["image"] ?>" alt="" style="width : 250px">
               </div>
             
         <?php } ?>

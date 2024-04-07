@@ -9,7 +9,7 @@
 ">
     <title>Document</title>
 </head>
-<body style="position : relative ; min-height : 100vh ">
+<body >
     
 
     <footer>

@@ -28,6 +28,7 @@
         <img src="../images/contact.svg" alt=""  style="width : 30%">
         <div class="form-container ml-3">
              <p class="fs-3">Contactez nous </p>
+             <p id="error" class="text-danger"></p>
              <?php
                 if(isset($_GET["message"])){ ?>
                 <div style="text-align : center ; color : green ">
@@ -107,13 +108,13 @@
     <?php include("footer.php") ?>
            
 
-    <script>
-             const btn = document.querySelector(".btn-contain_valider") ;
+    <script src="../js/contact.js">
+           /*  const btn = document.querySelector(".btn-contain_valider") ;
              const form = document.querySelector("form") ;
              btn.addEventListener("click" , (e)=>{
                  e.preventDefault() ; 
                  form.submit() ;
-             })
+             })*/
     </script>
       
 </body>

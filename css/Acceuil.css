@@ -41,17 +41,35 @@
     justify-content: center;
 }
 
-footer {
-   position: relative;
-   margin-top: 60px;
-   display: flex;
-   background-color: #FFC300;
-   text-align: center;
-   padding: 20px;
-   justify-content: space-around;
-   color: white;
-   font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;
-}
+
 .active {
     color : red !important ;
 }
+
+@media screen and (max-width: 768px) {
+    
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80%;
+    }
+
+    .section-left {
+        padding: 30px;
+        text-align: center;
+        order: 2;
+    }
+    .section-right {
+        padding: 10px;
+        order: 1;
+        text-align: center;
+    }
+    .section-right img {
+        width: 90%;
+    }
+   
+  }
+  

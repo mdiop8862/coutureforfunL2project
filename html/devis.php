@@ -25,14 +25,14 @@
         <img src="../images/form.svg" alt=""  style="width : 32%">
         <div class="form-container">
              <p class="fs-3">Devis sur mesure pour vous</p>
-            
+              <p id="error" class="text-danger"></p>
              <form action="../php/devisTraitement.php" method="post">
 
-             <div class="d-flex mb-3 justify-content-between">
+             <div class="d-flex mb-3 justify-content-between blockDedeux">
 
              <div  style="width : 100%" >
                     <div>
-                       <label for="typeVet" class="form-label">Type de vetement </label>
+                       <label for="typeVet" class="form-label">Type de vetement</label>
                     </div>
                     
                     <select name="vetement" id="typeVet"  >
@@ -64,27 +64,28 @@
                        <label for="taille" class="form-label">Taille</label>
                     </div>
                     <div>
-                        <input type="text" id="taille" name="taille" >
+                        <input type="number" id="taille" name="taille" >
                     </div>
                     
                 </div>
 
 
-                <div class="mb-3">
+        <div class="mb-3 blockradio">
                     <p>Choisir une prestation</p>
-                    <div>
+
+                    <div class="item_radio">
                        <input type="radio" name="prestation" id="" value="Ourlets" >
-                       <label for="Ourlets" class="form-label" style="margin-left : 5px ">Ourlets</label>
+                       <label for="Ourlets" class="form-label" >Ourlets</label>
                     </div>
 
-                    <div>
+                    <div class="item_radio">
                         <input type="radio" name="prestation" id="" value="Retouches" >
-                        <label for="" class="form-label" style="margin-left : 5px ">Retouches</label>
+                        <label for="" class="form-label" >Retouches</label>
                     </div>
 
-                    <div>
+                    <div class="item_radio">
                         <input type="radio" name="prestation" id="" value="Ourlets et retouches" >
-                        <label for="" class="form-label" style="margin-left : 5px ">Ourlets et Retouches</label>
+                        <label for="" class="form-label" >Ourlets et Retouches</label>
                     </div>
                     
                 </div>
@@ -100,13 +101,13 @@
     <?php include("footer.php") ?>
 
 
-    <script>
-             const btn = document.querySelector(".btn-contain_valider") ;
+    <script src="../js/devis.js">
+           /*  const btn = document.querySelector(".btn-contain_valider") ;
              const form = document.querySelector("form") ;
              btn.addEventListener("click" , (e)=>{
                  e.preventDefault() ; 
                  form.submit() ;
-             })
+             })*/
     </script>
       
 </body>

@@ -67,3 +67,57 @@ input:focus , textarea:focus, select:focus {
 form label{
      font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;  
 }
+
+
+@media screen and (max-width: 768px) {
+    .devis_main {
+        padding-top: 300px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .form-container{
+        width: 100% !important;
+    }
+    form {
+        width: 100% !important;
+    }
+    .devis_main img{
+        display: none;
+    }
+    .devis_main form .blockDedeux{
+        display: block !important;
+    }
+    input , select , textarea {
+        width:  90% !important;
+    }
+    .radio{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .item_radio  {
+        display: flex !important;
+        margin-bottom: 15px;
+        width: 90% !important;
+        
+    }
+    .blockradio p {
+        margin-bottom: 10px;
+    }
+    .blockradio{
+        margin-top: 10px;
+        width: 90%;
+    }
+    .item_radio label {
+        margin-left: 15px;
+    }
+    .item_radio input {
+        margin-left: 0 !important;
+        width: 15px !important;
+    }
+
+    
+   
+  }
+  

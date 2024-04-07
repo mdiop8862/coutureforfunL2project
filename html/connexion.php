@@ -31,21 +31,24 @@
 
     
         <img src="../images/connexion.svg" alt=""  style="width : 30%">
+
         <div class="form-container">
              <p class="fs-3">Connectez vous </p>
+             <p id="error" class="text-danger" ></p>
               <?php
                 if(isset($_GET["message"])){ ?>
                 <div style="text-align : center ; color : red ">
                      <?php echo $_GET["message"] ?>
                 </div>
 
-               <?php } ?>
+             <?php } ?>
 
             
              <form action="../php/connexionTraitement.php" method="post">
                 <div class="mb-4  ">
                     <div>
                        <label for="email" class="form-label">Email</label>
+                       <p id="errmail" class="text-danger"></p>
                     </div>
                     <div>
                         <input type="text" id="email" name="email" >
@@ -57,9 +60,10 @@
 
                         <div>
                             <label for="password" class="form-label">Password</label>
+                            <p id="errpassword" class="text-danger"></p>
                         </div>
                         <div>
-                            <input type="text" id="password" name="password" >
+                            <input type="password" id="password" name="password" >
                         </div>
                 </div>
                
@@ -75,13 +79,13 @@
 
     <?php include("footer.php") ?>
 
-    <script>
-             const btn = document.querySelector(".btn-contain_valider") ;
+    <script src="../js/login.js">
+           /*  const btn = document.querySelector(".btn-contain_valider") ;
              const form = document.querySelector("form") ;
              btn.addEventListener("click" , (e)=>{
                  e.preventDefault() ; 
                  form.submit() ;
-             })
+             })*/
     </script>
       
 </body>

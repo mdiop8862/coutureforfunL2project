@@ -28,13 +28,16 @@
         <img src="../images/inscription.svg" alt=""  style="width : 30%">
         <div class="form-container">
              <p class="fs-3">Isncrivez vous</p>
+             <p id="error" class="text-danger"></p>
              <form action="../php/InscriptionTraitement.php" method="post">
 
              <div class="d-flex mb-3 justify-content-between">
 
              <div  style="width : 100%" >
                     <div>
+                        
                        <label for="nom" class="form-label">Nom</label>
+                       <p id="errnom"></p>
                     </div>
 
                     <div>
@@ -46,7 +49,9 @@
 
              <div  style="width : 100% ; margin-left : 15px" >
                     <div>
+                        
                        <label for="prenom" class="form-label">Prenom</label>
+                       <p id="errprenom" class="text-danger"></p>
                     </div>
 
                     <div>
@@ -61,7 +66,10 @@
 
              <div  style="width : 100%" >
                     <div>
+                        
                        <label for="email" class="form-label">Email</label>
+                       <p id="errmail" class="text-danger"></p>
+                       
                     </div>
 
                     <div>
@@ -73,7 +81,9 @@
 
              <div  style="width : 100% ; margin-left : 15px" >
                     <div>
+                        
                        <label for="telephone" class="form-label">Tel</label>
+                       <p id="errtel" class="text-danger"></p>
                     </div>
 
                     <div>
@@ -89,11 +99,13 @@
 
                         <div  style="width : 100%" >
                             <div>
+                                
                                 <label for="password" class="form-label">Password</label>
+                                <p id="errpassword" class="text-danger"></p>
                             </div>
 
                             <div>
-                                <input type="text" id="password" name="password" require >
+                                <input type="password" id="password" name="password" require >
                             </div>
                             
                             
@@ -101,11 +113,13 @@
 
                         <div  style="width : 100% ; margin-left : 15px" >
                             <div>
+                                
                                 <label for="cpassword" class="form-label">Confirme Password</label>
+                                <p id="errcpassword" class="text-danger"></p>
                             </div>
 
                             <div>
-                                <input type="text" id="cpassword" name="cpassword" require >
+                                <input type="password" id="cpassword" name="cpassword" require >
                             </div>
                             
                         </div>
@@ -123,13 +137,13 @@
 
     <?php include("footer.php") ?>
 
-    <script>
-             const btn = document.querySelector(".btn-contain_valider") ;
+    <script src="../js/inscription.js" >
+           /*  const btn = document.querySelector(".btn-contain_valider") ;
              const form = document.querySelector("form") ;
              btn.addEventListener("click" , (e)=>{
                  e.preventDefault() ; 
                  form.submit() ;
-             })
+             })*/
     </script>
       
 </body>

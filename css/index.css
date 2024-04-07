@@ -96,6 +96,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .Temoignages > p {
@@ -107,6 +108,16 @@ nav ul {
  }
  ul li a:active {
     color : #FFC300;
+ }
+ footer {
+    margin-top: 60px;
+    display: flex;
+    background-color: #FFC300;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-around;
+    color: white;
+    font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;
  }
 /*.Temoignages > p {
    text-align: center;
@@ -121,3 +132,62 @@ nav ul {
     border-radius: 10px;
 }
 */
+
+@media screen and (max-width: 768px) {
+    /* Styles à appliquer pour les écrans de 768 pixels de large ou moins */
+    .tem_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .temChild {
+        width: 60%;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #54DFFE;
+        font-family: "PlayfairDisplay-VariableFont_wght.ttf" , sans-serif;
+    
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 9px;
+        background-color: white;
+    }
+
+    nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: inherit;
+}
+
+ nav h4 {
+    margin-left: 0;
+ }
+
+ .logo {
+    font-family: "Pacifico-Regular.ttf" , sans-serif;
+    align-self: flex-start;
+    margin-left: 3%;
+    
+}
+nav .btn-contain{
+    align-self: flex-start;
+    margin-left: 3%;
+
+}
+  }
+  
